@@ -1,0 +1,146 @@
+.page {
+  padding: var(--space-xl);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xl);
+  color: var(--color-text-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.statCard {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  line-height: 1.1;
+}
+
+.statValueTodo {
+  color: var(--color-todo);
+}
+
+.statValueInProgress {
+  color: var(--color-in-progress);
+}
+
+.statValueDone {
+  color: var(--color-done);
+}
+
+.statValueTotal {
+  color: var(--color-text-primary);
+}
+
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-border-light);
+}
+
+.recentList {
+  list-style: none;
+}
+
+.recentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-xs);
+  transition: border-color 0.15s;
+}
+
+.recentItem:hover {
+  border-color: var(--color-border);
+}
+
+.recentItemLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.recentStatus {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.recentStatusTodo {
+  background: oklch(0.25 0.06 250);
+  color: var(--color-todo);
+}
+
+.recentStatusInProgress {
+  background: oklch(0.25 0.06 85);
+  color: var(--color-in-progress);
+}
+
+.recentStatusDone {
+  background: oklch(0.22 0.06 145);
+  color: var(--color-done);
+}
+
+.recentTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recentDate {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  margin-left: var(--space-md);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
