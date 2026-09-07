@@ -40,7 +40,7 @@ See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
 
 ## Architecture
 
-The repository contains 47 files of Vite source, organised under `src/`. For environment-specific setup, see [`INSTALL.md`](INSTALL.md).
+The repository contains 36 files of Vite source, organised under `src/`. For environment-specific setup, see [`INSTALL.md`](INSTALL.md).
 
 ## Usage guide
 
